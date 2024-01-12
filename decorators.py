@@ -3,7 +3,7 @@ import time
 
 
 def debugger(f):
-    """debugger decorator prints the input arguments and output provided to f.
+    """Prints the input arguments and output provided to f.
 
     Args:
         f (Callable): any Python function
