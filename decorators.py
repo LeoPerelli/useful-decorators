@@ -54,6 +54,14 @@ def delayer(wait=1):
 
 
 def cacher(f):
+    """Caches the input and output provided to f.
+
+    Args:
+        f (Callable): any Python function
+
+    Returns:
+        Any: f(*args,**kwargs)
+    """
     cache = {}
 
     @functools.wraps(f)
